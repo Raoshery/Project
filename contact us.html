@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- Icon Link -->
+    <link rel="shortcut icon" href="Image/logo.png">
+    <!-- Bootstrap Stylesheet link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!-- external Css link -->
+    <link rel="stylesheet" href="css/styl.css">
+    <!-- bootstrap js link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- icon cdn strat  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- icon cdn end  -->
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .contact {
+            position: relative;
+            min-height: 100vh;
+            padding: 50px 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .contact .content {
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .contact .content h2 {
+            font-size: 36px;
+            font-weight: 500;
+            color: #fff;
+        }
+
+        .contact .content p {
+            font-weight: 300;
+            color: #fff;
+        }
+
+        .container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        .container .contactInfo {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container .contactInfo .Box {
+            padding: 20px 0;
+            display: flex;
+        }
+
+        .container .contactInfo .Box .icon {
+            min-width: 60px;
+            height: 60px;
+            background: #fccc07;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            font-size: 22px;
+        }
+
+        .container .contactInfo .Box .text {
+            margin-left: 20px;
+            color: black;
+        }
+
+        .container .contactInfo .Box .text h3,
+        .container .contactInfo .Box .text h4,
+        .container .contactInfo .Box .text h5 {
+            color: #333;
+        }
+
+        .contactForm {
+            width: 60%;
+            padding: 40px;
+            background: #fff;
+            margin-top: 30px;
+        }
+
+        .contactForm h2 {
+            font-size: 30px;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .contactForm .inputBox {
+            position: relative;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .contactForm .inputBox input,
+        .contactForm .inputBox textarea {
+            width: 100%;
+            padding: 5px 0;
+            font-size: 16px;
+            margin: 10px 0;
+            border: none;
+            border-bottom: 2px solid #333;
+            outline: none;
+            resize: none;
+        }
+
+        .contactForm .inputBox span {
+            position: absolute;
+            left: 0;
+            padding: 5px 0;
+            font-size: 16px;
+            margin: 10px 0;
+            pointer-events: none;
+            transition: 0.5s;
+            color: #666;
+        }
+
+        .contactForm .inputBox input:focus~span,
+        .contactForm .inputBox input:valid~span,
+        .contactForm .inputBox textarea:focus~span,
+        .contactForm .inputBox textarea:valid~span {
+            color: #fccc07;
+            font-size: 12px;
+            transform: translateY(-20px);
+        }
+
+        .contactForm .inputBox input[type="submit"] {
+            width: 100px;
+            background: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        @media (max-width:991px) {
+            .contact {
+                padding: 50px;
+            }
+
+            .container {
+                flex-direction: column;
+            }
+
+            .container .contactInfo {
+                margin-bottom: 40px;
+            }
+
+            .contactForm {
+                width: 90%;
+            }
+        }
+
+        .dropdown:hover {
+            color: #fccc07;
+        }
+
+        .nave:hover {
+            color: #fccc07;
+        }
+
+        #bgnavbar {
+            background-color: skyblue;
+        }
+        .bg {
+      background-image: url(bg-3.jpg);
+      background-size: cover;
+    }
+    </style>
+</head>
+<nav class="navbar navbar-expand-lg" id="bgnavbar">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="image/logo.png" href="index.html" height="60px" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nave nav-link active" aria-current="page" href="index.html">Pleasent Tour</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Category
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="beachtour.html">Beach Tours</a></li>
+                        <li><a class="dropdown-item" href="hillstation.html">Hill Station</a></li>
+                        <li><a class="dropdown-item" href="bag.html" class=" text-dark"
+                                style="text-decoration: none;">Bag</a></li>
+                        <li><a class="dropdown-item" href="waterbotle.html" class="text-dark"
+                                style="text-decoration: none;">WaterBotle</a></li>
+                        <li><a class="dropdown-item" href="sunblock.html" class="text-dark"
+                                style="text-decoration: none;">Sunblock</a></li>
+                        <li><a class="dropdown-item" href="glasses.html" class="text-dark"
+                                style="text-decoration: none;">Glasses</a></li>
+                        <li><a class="dropdown-item" href="firstaid.html" class="text-dark"
+                                style="text-decoration: none;">FirstAid</a></li>
+                        <li><a class="dropdown-item" href="pillo.html" class="text-dark"
+                                style="text-decoration: none;">Pillow</a></li>
+                        <li><a class="dropdown-item" href="Power.html" class="text-dark"
+                                style="text-decoration: none;">Power Bank</a></li>
+                        <li><a class="dropdown-item" href="rain protection.html" class="text-dark"
+                                style="text-decoration: none;">Rain Protection</a></li>
+                                <li><a class="dropdown-item" href="Safety.html" class="text-dark"
+                                    style="text-decoration: none;">Safety</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nave nav-link active" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nave nav-link active" href="faqs.html">FAQs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nave nav-link active" href="contact us.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- navbar end -->
+
+<body>
+    <section class="contact">
+        <div class="content">
+            <h2 class="text-dark">Contact Us</h2>
+            <p class="text-dark">Thank you for your interest in Pleasant Tour! Whether you have questions about our travel packages, need assistance with booking, or simply want to share feedback about your experience, we're here to help. Our dedicated team of travel experts is available to assist you every step of the way.</p>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="Box">
+                    <div class="icon"><i class="bi bi-geo-alt" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>Sec 11 1/2 gulshan behar orangi town Karachi</p>
+                    </div>
+                </div>
+                <div class="Box">
+                    <div class="icon"><i class="bi bi-telephone" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h4>Phone</h4>
+                        <p>03272505440 <br>03352436256</p>
+                    </div>
+                </div>
+                <div class="Box">
+                    <div class="icon"><i class="bi bi-envelope" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h5>Email</h5>
+                        <p>asimjaved0120@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form id="contactForm">
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <input type="text" name="fullName" required="required" id="fullName">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="email" name="email" required="required" id="email">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea required="required" name="message" id="message"></textarea>
+                        <span>Type your message....</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="button" name=""  class="btn btn-warning "  onclick="validateForm()" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function validateForm() {
+            var fullName = document.getElementById("fullName").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+    
+            if (fullName === "" || email === "" || message === "") {
+                alert("Please fill in all fields");
+            } else {
+                // Validate Full Name: No digits allowed
+                if (/[\d]/.test(fullName)) {
+                    alert("Full Name should not contain digits");
+                    return;
+                }
+    
+                // Additional validation logic can be added here if needed
+    
+                // If the form is valid, display success alert
+                alert("Form submitted successfully!");
+    
+                // You can choose to submit the form or perform other actions here
+                document.getElementById("myForm").submit();
+            }
+        }
+    </script>
+    <br>
+    <!-- footer strat -->
+    <section>
+        <!-- Footer -->
+        <footer class="bg text background-clip">
+            <div class="container p-4">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                        <h5 class="text-uppercase outlined-text">Pleasent Tour</h5>
+
+                        <p class="text-dark">
+                            Welcome to Pleasant Tour, where every journey is a delightful adventure waiting to unfold.
+                            Our mission is
+                            to curate unforgettable travel experiences that immerse you in the beauty and charm of
+                            destinations
+                            worldwide. Whether you're seeking serene landscapes, vibrant cultures, or thrilling
+                            escapades, Pleasant
+                            Tour is your gateway to exploration. Join us as we embark on a voyage of discovery, where
+                            every moment is
+                            infused with joy and wonder. Let Pleasant Tour be your companion as you wander the globe and
+                            create
+                            memories to last a lifetime.
+                        </p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0 text-align: left">
+                        <h5 class="text-uppercase outlined-text">Products</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="bag.html" class=" text-dark" style="text-decoration: none;">Bag</a>
+                            </li>
+                            <li>
+                                <a href="waterbotle.html" class="text-dark"
+                                    style="text-decoration: none;">WaterBotle</a>
+                            </li>
+                            <li>
+                                <a href="sunblock.html" class="text-dark" style="text-decoration: none;">Sunblock</a>
+                            </li>
+                            <li>
+                                <a href="glasses.html" class="text-dark" style="text-decoration: none;">Glasses</a>
+                            </li>
+                            <li>
+                                <a href="firstaid.html" class="text-dark" style="text-decoration: none;">FirstAid</a>
+                            </li>
+                            <li>
+                                <a href="rain protection.html" class="text-dark" style="text-decoration: none;">Rain Protection</a>
+                            </li>
+                            <li>
+                                <a href="pillo.html" class="text-dark" style="text-decoration: none;">Pillow</a>
+                            </li>
+                            <li>
+                                <a href="Power.html" class="text-dark" style="text-decoration: none;">Power Bank</a>
+                            </li>
+                            <li>
+                              <a href="Safety.html" class="text-dark" style="text-decoration: none;">Safety</a>
+                          </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase outlined-text">Help</h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="Faqs.html" class="text-dark" style="text-decoration: none;">FAQs</a>
+                            </li>
+                            <li>
+                                <a href="contact us.html" class="text-dark" style="text-decoration: none;">Contact
+                                    Us</a>
+                            </li>
+                            <li>
+                                <a href="about.html" class="text-dark" style="text-decoration: none;">About Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+                </div>
+            </div>
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: #fccc07;">
+                © 2024 Copyright:
+                <a class="text-body" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+    </section>
+    <!-- footer end  -->
+</body>
+</html>

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pleasent Tour</title>
+  <!-- Icon Link -->
+  <link rel="shortcut icon" href="Image/logo.png">
+  <!-- Bootstrap Stylesheet link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <!-- external Css link -->
+  <link rel="stylesheet" href="css/styl.css">
+  <!-- bootstrap js link -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- custom css -->
+  <!-- icon cdn strat  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- icon cdn end  -->
+  <style>
+    .dropdown:hover {
+      color: #fccc07;
+    }
+
+    .nave:hover {
+      color: #fccc07;
+    }
+
+    .bg {
+      background-image: url(bg-3.jpg);
+      opacity: initial;
+      background-size: cover;
+    }
+
+    #bgnavbar {
+      background-color: skyblue;
+    }
+
+    .carousel-item img {
+      height: 500px;
+    }
+
+    .card:hover {
+      background-color: #fccc07;
+    }
+
+    .btn:hover {
+      background-color: #fccc07;
+    }
+
+    p {
+      text-align: justify;
+    }
+  </style>
+  <!-- custom css -->
+</head>
+
+<body>
+
+  <!-- navbra start -->
+  <nav class="navbar navbar-expand-lg" id="bgnavbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="image/logo.png" href="index.html" height="60px" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nave nav-link active" aria-current="page" href="index.html">Pleasent Tour</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Category
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="beachtour.html" target="blank">Beach Tours</a></li>
+              <li><a class="dropdown-item" href="hillstation.html" target="blank">Hill Station</a></li>
+              <li><a class="dropdown-item" href="bag.html" class=" text-dark" style="text-decoration: none;"
+                  target="blank">Bag</a>
+              </li>
+              <li><a class="dropdown-item" href="waterbotle.html" class="text-dark" style="text-decoration: none;"
+                  target="blank">WaterBotle</a></li>
+              <li><a class="dropdown-item" href="sunblock.html" class="text-dark" style="text-decoration: none;"
+                  target="blank">Sunblock</a></li>
+              <li><a class="dropdown-item" href="glasses.html" class="text-dark" style="text-decoration: none;"
+                  target="blank">Glasses</a></li>
+              <li><a class="dropdown-item" href="firstaid.html" class="text-dark" style="text-decoration: none;"
+                  target="blank">FirstAid</a></li>
+              <li><a class="dropdown-item" href="pillo.html" class="text-dark" style="text-decoration: none;"
+                  target="blank">Pillow</a>
+              </li>
+              <li><a class="dropdown-item" href="Power.html" class="text-dark" style="text-decoration: none;"
+                  target="blank">Power
+                  Bank</a></li>
+              <li><a class="dropdown-item" href="rain protection.html" class="text-dark" style="text-decoration: none;"
+                  target="blank">Rain Protection</a></li>
+              <li><a class="dropdown-item" href="Safety.html" class="text-dark" style="text-decoration: none;"
+                  target="blank">Safety</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nave nav-link active" href="about.html" target="blank">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nave nav-link active" href="faqs.html" target="blank">FAQs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nave nav-link active" href="contact us.html" target="blank">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+      <div class="btn btn-warning">
+        <a class="text-dark" href="Signup.html" style="text-decoration: none;">Sign Up</a>
+      </div>
+      &nbsp;
+      &nbsp;
+      <div class="btn btn-warning">
+        <a class="text-dark" href="Login.html" style="text-decoration: none;">Login</a>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar end -->
+
+  <!-- carousel start -->
+
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="Image/bg-3.jpg" class="d-block w-100" alt="Nature">
+        <div class="carousel-caption d-none d-md-block">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Image/bg-2.jpg" class="d-block w-100" alt="Maldives">
+        <div class="carousel-caption d-none d-md-block">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Image/bg-1.jpg" class="d-block w-100" alt="Mountains">
+        <div class="carousel-caption d-none d-md-block">
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- carousel end -->
+
+  <!-- card start -->
+  <br>
+  <div class="container">
+
+    <!-- product 1 -->
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+        <img src="PT-images/bag_images/yellowluggagebag.jpg" class="card-img-top" alt="Bag">
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-12"><br><br>
+        <h5 class="text-center display-6"><b>Bags</b></h5>
+        <p> The Urban Explorer Backpack, your versatile companion for navigating the bustling city streets or venturing
+          into the great outdoors. Crafted with premium materials and thoughtful design features, this backpack
+          seamlessly blends style with functionality.Constructed from durable yet lightweight water-resistant nylon, the
+          Urban Explorer Backpack ensures your belongings stay safe and dry in any weather conditions. The sleek design
+          incorporates multiple compartments and pockets, providing ample storage space for all your essentials.The main
+          compartment boasts a padded sleeve to secure your laptop or tablet, while additional pockets and organizers
+          keep your smaller items neatly arranged.</p>
+        <a href="bag.html" class="btn btn-dark card" target="blank">Buy Now</a>
+      </div>
+    </div><br>
+
+    <!-- product 2 -->
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+        <img src="PT-images/firstaidimages/firstaid11.jpg" class="card-img-top" alt="Firstaid">
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-12"><br><br>
+        <h5 class="text-center display-6"><b>FirstAid</b></h5>
+        <p> first aid kit designed for quick response to minor injuries and emergencies. It contains essential items
+          such as bandages, antiseptic wipes, adhesive tape, scissors, tweezers, and disposable gloves. Ideal for
+          keeping at home, in the car, or when traveling for immediate access to basic medical supplies in case of
+          accidents or injuries.first aid kit that provides essential supplies for addressing minor injuries and
+          emergencies. This compact and portable kit includes bandages, adhesive tape, antiseptic wipes, scissors,
+          tweezers, disposable gloves, and other necessities for basic wound care. Its convenient size makes it suitable
+          for storing in various locations such as homes, cars, offices, and outdoor adventures. With "FirstAid Briefly"
+          on hand, you can quickly and effectively respond to unexpected medical situations and provide timely
+          assistance to those in need.</p>
+        <a href="firstaid.html" class="btn btn-dark card" target="blank">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- product 3 -->
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+        <img src="PT-images/pillowimages/pilllow2.png" class="card-img-top" alt="Pillow">
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-12"><br><br>
+        <h5 class="text-center display-6"><b>Pillow</b></h5>
+        <p> A comfortable and supportive neck pillow designed to provide relief and relaxation during travel or rest.
+          Made with soft and plush materials, this pillow contours to the shape of your neck and provides gentle support
+          to alleviate tension and promote better alignment. Perfect for long flights, road trips, or simply lounging at
+          home, the "Neck Pillow Ease" offers a cozy and ergonomic solution for neck discomfort and fatigue. Its compact
+          design makes it easy to carry and store, ensuring comfort wherever you go. Crafted with premium memory foam
+          and covered in a plush, velvety fabric, this neck pillow provides unparalleled relaxation for your neck and
+          shoulders. Whether you're on a long flight, road trip, or simply taking a nap at home, the ergonomic design of
+          the "Neck Pillow Ease" cradles your neck and promotes proper alignment, reducing strain and discomfort. Its
+          adjustable closure ensures a snug fit for users of all sizes, while its compact size makes it easy to pack and
+          carry. Say goodbye to stiff necks and hello to blissful comfort with the "Neck Pillow Ease."</p>
+        <a href="pillo.html" class="btn btn-dark card" target="blank">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- product 4 -->
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+        <img src="image/powerbank-3.jpg" class="card-img-top" alt="Powerbank">
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-12"><br><br>
+        <h5 class="text-center display-6"><b>Power</b></h5>
+        <p>
+          "PowerBoost Mini" - A compact and portable power bank designed to provide on-the-go charging for your
+          electronic devices. With its sleek and lightweight design, the "PowerBoost Mini" easily fits into your pocket,
+          purse, or backpack, making it perfect for travel, commuting, or outdoor activities. Equipped with
+          high-capacity lithium-ion batteries, it delivers fast and reliable charging for smartphones, tablets,
+          smartwatches, and other USB-powered devices. The "PowerBoost Mini" features multiple charging ports, LED
+          indicators for battery level, and built-in safety features to protect against overcharging and short circuits.
+          Never run out of power again with the convenient and reliable "PowerBoost Mini" power bank.With its sleek and
+          lightweight design, the "PowerBoost Mini" easily fits into your pocket, purse, or backpack, making it perfect
+          for travel, commuting, or outdoor activities. Equipped with high-capacity lithium-ion batteries, it delivers
+          fast and reliable charging for smartphones, tablets, smartwatches, and other USB-powered devices.</p>
+        <a href="Power.html" class="btn btn-dark card" target="blank">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- product 5 -->
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+        <img src="PT-images/Rain_protection images/raincoat.png" class="card-img-top" alt="Rain Protection">
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-12"><br><br>
+        <h5 class="text-center display-6"><b>Rain Protection</b></h5>
+        <p>
+          "RainGuard Pro" - A durable and reliable rain protection solution designed to keep you dry and comfortable in
+          wet weather conditions. Crafted from waterproof and windproof materials, the "RainGuard Pro" features a
+          lightweight and breathable design that allows for maximum mobility while shielding you from rain, wind, and
+          moisture. Its adjustable hood, cuffs, and hem ensure a snug and customized fit, while strategically placed
+          ventilation panels prevent overheating and promote airflow. Whether you're hiking, camping, or simply
+          navigating through the urban jungle, the "RainGuard Pro" offers superior protection and peace of mind against
+          the elements. Stay dry and focused with the ultimate rain protection solution - the "RainGuard Pro." Its
+          adjustable hood, cuffs, and hem ensure a snug and customized fit, while strategically placed ventilation
+          panels prevent overheating and promote airflow. Whether you're hiking, camping, or simply navigating through
+          the urban jungle, the "RainGuard Pro" offers superior protection and peace of mind against the elements</p>
+        <a href="rain protection.html" class="btn btn-dark card" target="blank">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- product 6 -->
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+        <img src="PT-images/safety_images/Organiser.png" class="card-img-top" alt="Safety">
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-12"><br><br>
+        <h5 class="text-center display-6"><b>Safety</b></h5>
+        <p>
+          A comprehensive safety solution designed to protect you in various situations and environments. The
+          "SafetyShield Pro" includes a range of features such as a personal alarm, emergency flashlight, seatbelt
+          cutter, window breaker, and pepper spray for self-defense. Its compact and portable design makes it easy to
+          carry in your bag, car, or pocket, ensuring you have essential safety tools at your fingertips whenever you
+          need them. Whether you're walking alone at night, driving in unfamiliar areas, or facing potential threats,
+          the "SafetyShield Pro" provides peace of mind and empowers you to stay safe and prepared for any situation.Its
+          compact and portable design makes it easy to carry in your bag, car, or pocket, ensuring you have essential
+          safety tools at your fingertips whenever you need them.Its compact and portable design makes it easy to carry
+          in your bag, car, or pocket, ensuring you have essential safety tools at your fingertips whenever you need
+          them.</p>
+        <a href="Safety.html" class="btn btn-dark card" target="blank">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- product 7 -->
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+        <img src="PT-images/sunblockimages/GLORIL-SUNBLOCK-30GM.jpg" class="card-img-top" alt="Sunblock">
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-12"><br><br>
+        <h5 class="text-center display-6"><b>Sunblock</b></h5>
+        <p>
+          A high-performance sunblock designed to provide superior protection against harmful UV rays. Formulated with
+          advanced broad-spectrum SPF 50+ sunscreen, "SunGuard Ultra" offers long-lasting protection for your skin
+          against both UVA and UVB rays, helping to prevent sunburn, premature aging, and skin cancer. A
+          high-performance sunblock designed to provide superior protection against harmful UV rays. Formulated with
+          advanced broad-spectrum SPF 50+ sunscreen, "SunGuard Ultra" offers long-lasting protection for your skin
+          against both UVA and UVB rays, helping to prevent sunburn, premature aging, and skin cancer. Its
+          water-resistant formula is perfect for outdoor activities such as swimming, hiking, and sports, while its
+          lightweight and non-greasy texture make it comfortable to wear all day. Enriched with moisturizing ingredients
+          and antioxidants, "SunGuard Ultra" nourishes and hydrates your skin, leaving it feeling soft, smooth, and
+          protected against sun damage. Enjoy the sun safely with "SunGuard Ultra." Enriched with moisturizing
+          ingredients and antioxidants, "SunGuard Ultra" nourishes and hydrates your skin, leaving it feeling soft,
+          smooth, and protected against sun damage. Enjoy the sun safely with "SunGuard Ultra."</p>
+        <a href="sunblock.html" class="btn btn-dark card" target="blank">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- product 8 -->
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+        <img src="PT-images/eyewearimages/fashinvintagesmallframesunglasses.jpg" class="card-img-top" alt="Glasses">
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-12"><br><br>
+        <h5 class="text-center display-6"><b>Glasses</b></h5>
+        <p>
+          "VisionGuard Pro" - High-quality eyewear designed for optimal vision and protection. The "VisionGuard Pro"
+          glasses feature impact-resistant lenses that offer superior clarity and durability, making them perfect for
+          everyday wear or outdoor activities. With UV protection coatings, they shield your eyes from harmful UV rays,
+          reducing the risk of eye damage and fatigue. The stylish frames are lightweight and comfortable, ensuring
+          all-day wearability without sacrificing style. Whether you need prescription glasses or sunglasses,
+          "VisionGuard Pro" provides the perfect combination of functionality, comfort, and style to keep your eyes safe
+          and your vision clear.With UV protection coatings, they shield your eyes from harmful UV rays, reducing the
+          risk of eye damage and fatigue. The stylish frames are lightweight and comfortable, ensuring all-day
+          wearability without sacrificing style. Whether you need prescription glasses or sunglasses, "VisionGuard Pro"
+          provides the perfect combination of functionality, comfort, and style to keep your eyes safe and your vision
+          clear.</p>
+        <a href="glasses.html" class="btn btn-dark card" target="blank">Buy Now</a>
+      </div>
+    </div>
+    <!-- product 9 -->
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+        <img src="PT-images/bottle_image/stainlesssteelwater.jpg" class="card-img-top" alt="WaterBottle">
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-12"><br><br>
+        <h5 class="text-center display-6"><b>WaterBottle</b></h5>
+        <p>
+          A durable and versatile water bottle designed for hydration on the go. The "HydroFlask Pro"
+          features a double-wall vacuum insulation technology that keeps your beverages cold for up to 24 hours or hot
+          for up to 12 hours, making it ideal for both hot and cold drinks. Crafted from premium stainless steel, it is
+          resistant to rust, punctures, and condensation, ensuring long-lasting durability and performance. The
+          wide-mouth opening allows for easy filling, pouring, and cleaning, while the leak-proof lid ensures a
+          spill-free experience. Whether you're hiking, working out, or traveling, the "HydroFlask Pro" is your trusted
+          companion for staying hydrated and refreshed throughout the day. Crafted from premium stainless steel, it is
+          resistant to rust, punctures, and condensation, ensuring long-lasting durability and performance. The
+          wide-mouth opening allows for easy filling, pouring, and cleaning, while the leak-proof lid ensures a
+          spill-free experience.</p>
+        <a href="waterbotle.html" class="btn btn-dark card" target="blank">Buy Now</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- card end -->
+
+  <br>
+  <!-- footer strat -->
+  <section>
+    <!-- Footer -->
+    <footer class="bg text background-clip">
+      <div class="container p-4">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase outlined-text">Pleasent Tour</h5>
+
+            <p class="text-dark">
+              Welcome to Pleasant Tour, where every journey is a delightful adventure waiting to unfold.
+              Our mission is
+              to curate unforgettable travel experiences that immerse you in the beauty and charm of
+              destinations
+              worldwide. Whether you're seeking serene landscapes, vibrant cultures, or thrilling
+              escapades, Pleasant
+              Tour is your gateway to exploration. Join us as we embark on a voyage of discovery, where
+              every moment is
+              infused with joy and wonder. Let Pleasant Tour be your companion as you wander the globe and
+              create
+              memories to last a lifetime.
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0 text-align: left">
+            <h5 class="text-uppercase outlined-text">Products</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="bag.html" class=" text-dark" style="text-decoration: none;" target="blank">Bag</a>
+              </li>
+              <li>
+                <a href="waterbotle.html" class="text-dark" style="text-decoration: none;" target="blank">WaterBotle</a>
+              </li>
+              <li>
+                <a href="sunblock.html" class="text-dark" style="text-decoration: none;" target="blank">Sunblock</a>
+              </li>
+              <li>
+                <a href="glasses.html" class="text-dark" style="text-decoration: none;" target="blank">Glasses</a>
+              </li>
+              <li>
+                <a href="firstaid.html" class="text-dark" style="text-decoration: none;" target="blank">FirstAid</a>
+              </li>
+              <li>
+                <a href="rain protection.html" class="text-dark" style="text-decoration: none;" target="blank">Rain
+                  Protection</a>
+              </li>
+              <li>
+                <a href="pillo.html" class="text-dark" style="text-decoration: none;" target="blank">Pillow</a>
+              </li>
+              <li>
+                <a href="Power.html" class="text-dark" style="text-decoration: none;" target="blank">Power Bank</a>
+              </li>
+              <li>
+                <a href="Safety.html" class="text-dark" style="text-decoration: none;" target="blank">Safety</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase outlined-text">Help</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="Faqs.html" class="text-dark" style="text-decoration: none;" target="blank">FAQs</a>
+              </li>
+              <li>
+                <a href="contact us.html" class="text-dark" style="text-decoration: none;" target="blank">Contact
+                  Us</a>
+              </li>
+              <li>
+                <a href="about.html" class="text-dark" style="text-decoration: none;" target="blank">About Us</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+      </div>
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: #fccc07;">
+        © 2024 Copyright:
+        <a class="text-body" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </section>
+  <!-- footer end  -->
+
+</body>
+
+</html>
